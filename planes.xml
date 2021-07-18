@@ -1,0 +1,54 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE plane_catalog [
+<!ELEMENT planes_for_sale (ad+)>
+<!ELEMENT ad (year, make, model, color, description,
+price?, seller, location)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT seller (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ATTLIST seller phone CDATA #REQUIRED>
+<!ATTLIST seller email CDATA #IMPLIED>
+<!ENTITY c "Cessna">
+<!ENTITY p "Piper">
+<!ENTITY b "Beechcraft">
+]>
+<?xml-stylesheet type="text/css" href="planes_css.css"?>
+<planes_for_sale>
+<c_section>
+	<ad>
+		<make> &c; </make>
+		<year> 2004 </year>
+		<model> A380-800 </model>
+		<color> Black</color>
+		<description> We are the future! </description>
+		<price> Rs. 44,900 </price>
+		<seller phone = "92762728213"> Skyway Aircraft </seller>
+		<location>
+			<city> Udupi, </city>
+			<state> Karnataka </state>
+		</location>
+	</ad>
+	</c_section>
+	<c_section>
+	<ad>
+		<make> &p; </make>
+		<year> 2008 </year>
+		<model> Boeing 777 </model>
+		<color> Pearl </color>
+		<description> Meet the new Luxury and Class. </description>
+		<price> Rs. 99,333 </price>
+		<seller phone = "4322432455" email = "ksi@gmail.com"> John SellerSkyway Aircraft </seller>
+		<location>
+			<city> Mangalore, </city>
+			<state> Karnataka </state>
+		</location>
+	</ad>
+	</c_section>
+</planes_for_sale>
